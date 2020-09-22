@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
+    <meta charset='utf-8' />
+    <script src='voicerss-tts.min.js'></script>
 </head>
-
 <body>
-    blaaaaaaaaaaaaaaaaaaaaaaaa
-
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="index.js"></script>
+    <script>
+        VoiceRSS.speech({
+            key: '<API key>',
+            src: 'Hello, world!',
+            hl: 'en-us',
+            v: 'Linda',
+            r: 0, 
+            c: 'mp3',
+            f: '44khz_16bit_stereo',
+            ssml: false
+        });
+    </script>
 </body>
-
 </html>
